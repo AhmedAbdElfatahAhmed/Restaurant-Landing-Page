@@ -1,0 +1,699 @@
+/* reset default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Start General styles */
+:root {
+  --primary-color: #ea0000;
+  --secondry-color: #2a333e;
+  --white-color: #fff;
+  --black-color: #000;
+  --abhaya-font: "Abhaya Libre", serif;
+  --poppins-font: "Poppins", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+ul {
+  list-style-type: none;
+}
+.btn {
+  border: none;
+  color: var(--white-color);
+  padding: 18px 45px;
+  border-radius: 10px;
+  font-family: var(--poppins-font);
+  font-weight: 700;
+  transform: skewX(-20deg);
+  cursor: pointer;
+}
+.btn-primary {
+  box-shadow: 0px 100px 80px rgba(234, 0, 37, 0.1),
+    0px 64.8148px 46.8519px rgba(234, 0, 37, 0.0759259),
+    0px 38.5185px 25.4815px rgba(234, 0, 37, 0.0607407),
+    0px 20px 13px rgba(234, 0, 37, 0.05),
+    0px 8.14815px 6.51852px rgba(234, 0, 37, 0.0392593),
+    0px 1.85185px 3.14815px rgba(234, 0, 37, 0.0240741);
+}
+.btn-secondray {
+  box-shadow: 0px 100px 80px rgba(68, 68, 68, 0.1),
+    0px 64.8148px 46.8519px rgba(68, 68, 68, 0.0759259),
+    0px 38.5185px 25.4815px rgba(68, 68, 68, 0.0607407),
+    0px 20px 13px rgba(68, 68, 68, 0.05),
+    0px 8.14815px 6.51852px rgba(68, 68, 68, 0.0392593),
+    0px 1.85185px 3.14815px rgba(68, 68, 68, 0.0240741);
+}
+.pl-30 {
+  padding-left: 30px;
+}
+.pl-80 {
+  padding-left: 80px;
+}
+/* End General styles */
+
+/* Start Header  */
+header {
+  font-family: var(--poppins-font);
+}
+
+header nav {
+  margin-top: 63px;
+  margin-bottom: 143px;
+  justify-content: space-between;
+}
+
+header nav ul li {
+  margin-left: 53px;
+  font-weight: 500;
+  font-size: 17px;
+}
+header nav ul li.active {
+  position: relative;
+}
+header nav ul li.active:after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  bottom: -7px;
+  left: -12px;
+  background-color: var(--primary-color);
+}
+.icons {
+  position: relative;
+}
+.icons img {
+  margin-left: 15px;
+}
+.icons sup {
+  position: absolute;
+  top: -16px;
+  left: 65px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  text-align: center;
+  line-height: 20px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+/* Start hero section */
+.hero-section {
+  justify-content: space-between;
+  margin-bottom: 158px;
+  position: relative;
+}
+.hero-section .hero-wraper {
+  width: 45%;
+}
+
+.hero-wraper span.text {
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.hero-wraper h1 {
+  font-family: var(--abhaya-font);
+  font-weight: 800;
+  font-size: 160px;
+  letter-spacing: -0.08em;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+.hero-wraper p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 34px;
+  color: var(--secondry-color);
+  padding-right: 80px;
+  margin-bottom: 50px;
+}
+.hero-wraper .btn {
+  margin-bottom: 60px;
+  font-weight: 700;
+  font-size: 18px;
+}
+.hero-wraper .btn-primary {
+  background-color: var(--primary-color);
+}
+.hero-wraper .btn-secondray {
+  background-color: var(--secondry-color);
+}
+
+.hero-wraper .meals .lunch,
+.hero-wraper .meals .dinner {
+  margin-right: 50px;
+}
+.hero-wraper .meals span.meal {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--secondry-color);
+  line-height: 34px;
+}
+.hero-wraper .meals span.time {
+  display: block;
+  color: var(--secondry-color);
+  opacity: 0.5;
+  font-weight: 500;
+}
+.hero-section figure {
+  width: 45%;
+}
+.hero-section figure img {
+  width: 100%;
+}
+.hero-section .dollar {
+  position: absolute;
+  left: 40%;
+  top: 50px;
+}
+.hero-section .Pagination {
+  position: absolute;
+  left: -80px;
+}
+/* End hero section */
+
+/* End Header */
+
+/* Start Products section */
+
+.products-section {
+  text-align: center;
+  margin-bottom: 243px;
+  font-family: var(--poppins-font);
+  position: relative;
+}
+
+.products-section .text span {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--secondry-color);
+  line-height: 30px;
+}
+
+.products-section .text h3 {
+  font-family: var(--abhaya-font);
+  font-weight: 800;
+  font-size: 70px;
+  letter-spacing: -0.08em;
+  color: var(--primary-color);
+  margin-bottom: 112px;
+  position: relative;
+}
+.products-section .text h3::after {
+  content: url("../img/Shape.svg");
+  position: absolute;
+  right: 47%;
+  top: 40px;
+}
+
+.products-section .products {
+  justify-content: space-between;
+}
+.products-section .products .product {
+  width: 24%;
+}
+.products .product figure {
+  width: 100%;
+}
+.products .product figure img {
+  width: 100%;
+}
+
+.products .product img.rate {
+  margin-bottom: 20px;
+}
+
+.products .product span.madeIn {
+  display: block;
+  font-weight: 400;
+  font-size: 15px;
+  margin-bottom: 13px;
+}
+.products .product h4 {
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+.products .product button {
+  font-weight: 500;
+  font-size: 12px;
+  background-color: var(--primary-color);
+}
+.products .product button span {
+  margin-left: 15px;
+}
+.products-section .leaf {
+  position: absolute;
+  top: 20%;
+  left: 0;
+}
+/* End Products section */
+
+/* Start food delivery section  */
+
+.food-delivery-section {
+  font-family: var(--poppins-font);
+  margin-bottom: 208px;
+}
+.food-delivery-wrapper {
+  justify-content: space-between;
+}
+.food-delivery-wrapper .food-lists {
+  width: 15%;
+}
+.food-delivery-wrapper .food-lists ul li:first-child {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 10px;
+  padding: 10px 35px 10px 3px;
+}
+.food-delivery-wrapper .food-lists ul li {
+  margin-bottom: 30px;
+}
+.food-delivery-wrapper .food-lists ul li span {
+  color: var(--secondry-color);
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: capitalize;
+  opacity: 0.5;
+}
+.food-delivery-wrapper .food-lists ul li:first-child span {
+  color: var(--white-color);
+  opacity: 1;
+}
+.food-delivery-wrapper .food-lists ul li img {
+  width: 35px;
+  height: 35px;
+  margin: 7px 10px 0 0;
+}
+
+.food-delivery-wrapper .card {
+  border-radius: 30.4376px;
+  width: 70%;
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  padding: 70px 50px;
+  position: relative;
+}
+
+.food-delivery-wrapper .card span {
+  display: inline-block;
+  background: #ffdad7;
+  border: 1.2175px solid #fcc7c3;
+  border-radius: 60.8751px;
+  padding: 5px 20px;
+  margin-bottom: 10px;
+}
+.food-delivery-wrapper .card h3 {
+  font-family: var(--abhaya-font);
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 62px;
+  letter-spacing: -0.06em;
+  color: var(--primary-color);
+  padding-right: 210px;
+}
+
+.food-delivery-wrapper .card p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 34px;
+  color: var(--secondry-color);
+  margin-bottom: 40px;
+}
+.food-delivery-wrapper .card button {
+  background-color: var(--secondry-color);
+}
+
+.food-delivery-wrapper .card img.dots {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.food-delivery-wrapper .card img.leaf {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+}
+.food-delivery-wrapper .card img.decor {
+  position: absolute;
+  top: 150px;
+  left: -150px;
+}
+.food-delivery-wrapper .card img.coffee {
+  position: absolute;
+  bottom: -250px;
+  right: -60px;
+}
+
+/* End food delivery section  */
+
+/* Start food served section  */
+.food-served-section {
+  font-family: var(--poppins-font);
+  position: relative;
+}
+.food-served-section .text {
+  text-align: center;
+}
+.food-served-section .text span {
+  color: var(--secondry-color);
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.food-served-section .text h3 {
+  font-family: var(--abhaya-font);
+  color: var(--primary-color);
+  font-weight: 800;
+  font-size: 70px;
+  letter-spacing: -0.08em;
+  margin-bottom: 50px;
+}
+
+.food-served-section .food-cards {
+  justify-content: space-between;
+}
+.food-served-section .food-cards .card {
+  width: 30%;
+  background: var(--white-color);
+  border: 1.2px solid #efefef;
+  border-radius: 24px;
+  padding: 10px 20px;
+  margin-bottom: 40px;
+}
+.food-served-section .food-cards .card img:first-child {
+  width: 100%;
+}
+.food-served-section .food-cards .card img.rate {
+  margin-bottom: 10px;
+}
+.food-served-section .food-cards .card span {
+  display: block;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--secondry-color);
+}
+.food-served-section .food-cards .card p {
+  padding-right: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  color: var(--secondry-color);
+  margin-bottom: 7px;
+}
+.food-served-section .food-cards .card .price {
+  justify-content: space-between;
+}
+.food-cards .card .price span {
+  font-weight: 500;
+}
+
+.food-cards .card .price .choosen img {
+  width: 40px;
+  height: 40px;
+}
+.food-cards .card .price .choosen img.share-icon {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 8px;
+}
+.food-served-section .btn {
+  background-color: var(--primary-color);
+  margin: auto;
+  margin-bottom: 144px;
+  position: relative;
+}
+.food-served-section .btn img {
+  position: absolute;
+  width: 100px;
+  top: 10px;
+  left: 105px;
+}
+.food-served-section .leaf {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* End food served section  */
+
+/* Start mobile app section  */
+.mobile-app-section {
+  font-family: var(--poppins-font);
+  background-color: rgb(234, 0, 0, 0.05);
+  padding-top: 50px;
+  margin-bottom: 104px;
+}
+.mobile-app-section .container {
+  align-items: stretch;
+  position: relative;
+}
+.mobile-app-section .image {
+  margin-right: 100px;
+  width: 45%;
+}
+.mobile-app-section .image img {
+  width: 100%;
+}
+
+.mobile-app-section .info {
+  margin-top: 170px;
+  width: 45%;
+}
+
+.mobile-app-section .info span {
+  display: inline-block;
+  color: var(--secondry-color);
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.mobile-app-section .info h3 {
+  font-family: var(--abhaya-font);
+  color: var(--primary-color);
+  font-weight: 800;
+  font-size: 70px;
+  letter-spacing: -0.08em;
+  line-height: 60px;
+  padding-right: 160px;
+  margin-bottom: 25px;
+}
+
+.mobile-app-section .info p {
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25.5px;
+}
+.mobile-app-section .info .buttons img:first-child {
+  margin-right: 50px;
+}
+.mobile-app-section .leaf {
+  position: absolute;
+  bottom: 160px;
+  left: 20px;
+}
+/* End mobile app section  */
+
+/* Start testimonial section */
+
+.testimonial-section {
+  font-family: var(--poppins-font);
+  position: relative;
+}
+
+.testimonial-section .text {
+  text-align: center;
+}
+
+.testimonial-section .text span {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--secondry-color);
+  line-height: 30px;
+}
+
+.testimonial-section .text h3 {
+  font-family: var(--abhaya-font);
+  font-weight: 800;
+  font-size: 70px;
+  letter-spacing: -0.08em;
+  color: var(--primary-color);
+  margin-bottom: 112px;
+}
+.testimonial-section .text h3::after {
+  content: url("../img/Shape.svg");
+  position: absolute;
+  right: 33%;
+  top: 80px;
+}
+.testimonial-section .testimonial-wrapper {
+  justify-content: space-between;
+}
+.testimonial-section .testimonal {
+  width: 45%;
+}
+.testimonial-section .testimonal .image img {
+  margin-right: 25px;
+}
+
+.testimonial-section .testimonal .info span {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--secondry-color);
+}
+.testimonial-section .testimonal .info span.city {
+  font-weight: 400;
+}
+.testimonial-section p {
+  margin-left: 95px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--secondry-color);
+  text-transform: capitalize;
+  margin-bottom: 250px;
+}
+.testimonial-section p span {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--primary-color);
+}
+
+/* End testimonial section */
+
+/* Start Footer section */
+footer {
+  font-family: var(--poppins-font);
+  background-color: var(--secondry-color);
+  padding: 100px 0 20px;
+  position: relative;
+}
+footer .card {
+  position: absolute;
+  top: -27%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid var(--primary-color);
+  border-radius: 47px;
+  background-color: var(--white-color);
+  padding: 20px;
+  text-align: center;
+  width: 70%;
+}
+footer .card h3 {
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 21px;
+  text-transform: capitalize;
+  color: var(--secondry-color);
+  margin-bottom: 30px;
+}
+footer .card h3::after {
+  content: url("../img/footer-Shape.svg");
+  position: absolute;
+  right: 36%;
+  top: 45px;
+}
+footer .card p {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--secondry-color);
+  line-height: 19px;
+  margin-bottom: 20px;
+}
+footer .card .subscribe {
+  position: relative;
+}
+footer .card input {
+  border: 1px solid var(--primary-color);
+  border-radius: 47px;
+  padding: 20px 30px;
+  width: 50%;
+}
+footer .card button {
+  position: absolute;
+  right: 26%;
+  bottom: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 47px;
+  border: none;
+  padding: 15px 30px;
+}
+footer .footer-wrapper {
+  justify-content: space-between;
+  align-items: stretch;
+}
+footer .footer-wrapper > div {
+  width: 24%;
+}
+
+footer .logo figure img {
+  margin: 50px 0;
+}
+footer .social-icons img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+footer .inner-span {
+  display: inline-block;
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 20px;
+  padding-top: 40px;
+}
+footer ul li {
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 1);
+}
+footer ul li img {
+  margin-right: 15px;
+}
+footer ul li img.location {
+  transform: translateY(5px);
+}
+footer .copyright {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+}
+
+/* End Footer section */
