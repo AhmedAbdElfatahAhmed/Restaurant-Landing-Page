@@ -13,7 +13,6 @@
   --abhaya-font: "Abhaya Libre", serif;
   --poppins-font: "Poppins", sans-serif;
 }
-
 .container {
   width: 80%;
   margin: 0 auto;
@@ -58,19 +57,24 @@ ul {
 .pl-80 {
   padding-left: 80px;
 }
+.title-section {
+  font-family: var(--abhaya-font);
+  font-weight: 800;
+  font-size: 70px;
+  letter-spacing: -0.08em;
+  color: var(--primary-color);
+}
 /* End General styles */
 
-/* Start Header  */
+/* Start Header section */
 header {
   font-family: var(--poppins-font);
 }
-
 header nav {
   margin-top: 63px;
   margin-bottom: 143px;
   justify-content: space-between;
 }
-
 header nav ul li {
   margin-left: 53px;
   font-weight: 500;
@@ -118,7 +122,6 @@ header nav ul li.active:after {
 .hero-section .hero-wraper {
   width: 45%;
 }
-
 .hero-wraper span.text {
   display: inline-block;
   font-weight: 500;
@@ -127,7 +130,6 @@ header nav ul li.active:after {
   color: var(--primary-color);
   margin-bottom: 20px;
 }
-
 .hero-wraper h1 {
   font-family: var(--abhaya-font);
   font-weight: 800;
@@ -155,7 +157,6 @@ header nav ul li.active:after {
 .hero-wraper .btn-secondray {
   background-color: var(--secondry-color);
 }
-
 .hero-wraper .meals .lunch,
 .hero-wraper .meals .dinner {
   margin-right: 50px;
@@ -189,17 +190,15 @@ header nav ul li.active:after {
 }
 /* End hero section */
 
-/* End Header */
+/* End Header section */
 
 /* Start Products section */
-
 .products-section {
   text-align: center;
   margin-bottom: 243px;
   font-family: var(--poppins-font);
   position: relative;
 }
-
 .products-section .text span {
   font-weight: 700;
   font-size: 18px;
@@ -208,13 +207,7 @@ header nav ul li.active:after {
   color: var(--secondry-color);
   line-height: 30px;
 }
-
 .products-section .text h3 {
-  font-family: var(--abhaya-font);
-  font-weight: 800;
-  font-size: 70px;
-  letter-spacing: -0.08em;
-  color: var(--primary-color);
   margin-bottom: 112px;
   position: relative;
 }
@@ -224,7 +217,6 @@ header nav ul li.active:after {
   right: 47%;
   top: 40px;
 }
-
 .products-section .products {
   justify-content: space-between;
 }
@@ -237,11 +229,9 @@ header nav ul li.active:after {
 .products .product figure img {
   width: 100%;
 }
-
 .products .product img.rate {
   margin-bottom: 20px;
 }
-
 .products .product span.madeIn {
   display: block;
   font-weight: 400;
@@ -269,7 +259,6 @@ header nav ul li.active:after {
 /* End Products section */
 
 /* Start food delivery section  */
-
 .food-delivery-section {
   font-family: var(--poppins-font);
   margin-bottom: 208px;
@@ -305,7 +294,6 @@ header nav ul li.active:after {
   height: 35px;
   margin: 7px 10px 0 0;
 }
-
 .food-delivery-wrapper .card {
   border-radius: 30.4376px;
   width: 70%;
@@ -314,7 +302,6 @@ header nav ul li.active:after {
   padding: 70px 50px;
   position: relative;
 }
-
 .food-delivery-wrapper .card span {
   display: inline-block;
   background: #ffdad7;
@@ -324,15 +311,10 @@ header nav ul li.active:after {
   margin-bottom: 10px;
 }
 .food-delivery-wrapper .card h3 {
-  font-family: var(--abhaya-font);
-  font-weight: 800;
-  font-size: 70px;
   line-height: 62px;
   letter-spacing: -0.06em;
-  color: var(--primary-color);
   padding-right: 210px;
 }
-
 .food-delivery-wrapper .card p {
   font-weight: 500;
   font-size: 15px;
@@ -343,7 +325,6 @@ header nav ul li.active:after {
 .food-delivery-wrapper .card button {
   background-color: var(--secondry-color);
 }
-
 .food-delivery-wrapper .card img.dots {
   position: absolute;
   top: 20px;
@@ -364,7 +345,6 @@ header nav ul li.active:after {
   bottom: -250px;
   right: -60px;
 }
-
 /* End food delivery section  */
 
 /* Start food served section  */
@@ -384,14 +364,8 @@ header nav ul li.active:after {
   text-transform: uppercase;
 }
 .food-served-section .text h3 {
-  font-family: var(--abhaya-font);
-  color: var(--primary-color);
-  font-weight: 800;
-  font-size: 70px;
-  letter-spacing: -0.08em;
   margin-bottom: 50px;
 }
-
 .food-served-section .food-cards {
   justify-content: space-between;
 }
@@ -429,7 +403,6 @@ header nav ul li.active:after {
 .food-cards .card .price span {
   font-weight: 500;
 }
-
 .food-cards .card .price .choosen img {
   width: 40px;
   height: 40px;
@@ -477,12 +450,10 @@ header nav ul li.active:after {
 .mobile-app-section .image img {
   width: 100%;
 }
-
 .mobile-app-section .info {
   margin-top: 170px;
   width: 45%;
 }
-
 .mobile-app-section .info span {
   display: inline-block;
   color: var(--secondry-color);
@@ -492,18 +463,11 @@ header nav ul li.active:after {
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
-
 .mobile-app-section .info h3 {
-  font-family: var(--abhaya-font);
-  color: var(--primary-color);
-  font-weight: 800;
-  font-size: 70px;
-  letter-spacing: -0.08em;
   line-height: 60px;
-  padding-right: 160px;
+  padding-right: 180px;
   margin-bottom: 25px;
 }
-
 .mobile-app-section .info p {
   margin-bottom: 50px;
   font-weight: 400;
@@ -521,16 +485,13 @@ header nav ul li.active:after {
 /* End mobile app section  */
 
 /* Start testimonial section */
-
 .testimonial-section {
   font-family: var(--poppins-font);
   position: relative;
 }
-
 .testimonial-section .text {
   text-align: center;
 }
-
 .testimonial-section .text span {
   font-weight: 700;
   font-size: 18px;
@@ -539,13 +500,7 @@ header nav ul li.active:after {
   color: var(--secondry-color);
   line-height: 30px;
 }
-
 .testimonial-section .text h3 {
-  font-family: var(--abhaya-font);
-  font-weight: 800;
-  font-size: 70px;
-  letter-spacing: -0.08em;
-  color: var(--primary-color);
   margin-bottom: 112px;
 }
 .testimonial-section .text h3::after {
@@ -563,7 +518,6 @@ header nav ul li.active:after {
 .testimonial-section .testimonal .image img {
   margin-right: 25px;
 }
-
 .testimonial-section .testimonal .info span {
   display: block;
   margin-bottom: 12px;
@@ -588,7 +542,6 @@ header nav ul li.active:after {
   font-size: 15px;
   color: var(--primary-color);
 }
-
 /* End testimonial section */
 
 /* Start Footer section */
@@ -659,7 +612,6 @@ footer .footer-wrapper {
 footer .footer-wrapper > div {
   width: 24%;
 }
-
 footer .logo figure img {
   margin: 50px 0;
 }
@@ -668,7 +620,6 @@ footer .social-icons img {
   height: 20px;
   margin-right: 10px;
 }
-
 footer .inner-span {
   display: inline-block;
   color: var(--white-color);
@@ -695,5 +646,4 @@ footer .copyright {
   color: rgba(255, 255, 255, 1);
   font-weight: 400;
 }
-
 /* End Footer section */

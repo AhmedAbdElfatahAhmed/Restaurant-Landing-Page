@@ -51,7 +51,6 @@
   .hero-section .hero-wraper p {
     padding-right: 0;
   }
-
   header .hero-section figure {
     width: 100%;
     margin-top: 70px;
@@ -75,7 +74,6 @@
     display: none;
   }
 }
-
 /* End header section */
 
 /* Start Products section */
@@ -118,9 +116,6 @@
   .food-delivery-wrapper .line {
     display: none;
   }
-  /* .food-delivery-wrapper .card img.coffee {
-    display: none;
-  } */
   .products-section .products .product {
     margin-bottom: 0px;
   }
@@ -133,7 +128,6 @@
 /* End food delivery section  */
 
 /* Start food served section  */
-
 @media (min-width: 768px) and (max-width: 991px) {
   .food-served-section .food-cards .card {
     width: 45%;
@@ -181,12 +175,10 @@
 /* End mobile app section  */
 
 /* Start testimonial section */
-
 @media (max-width: 991px) {
   .testimonial-section .testimonal {
     width: 100%;
   }
-
   .testimonial-section .text h3 {
     font-size: 2rem;
   }
@@ -241,5 +233,4 @@
     padding-left: 0;
   }
 }
-
 /* End Footer section */
